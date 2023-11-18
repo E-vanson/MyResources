@@ -1,4 +1,5 @@
 <?php
+session_start();
 $page_title="Registration page";
  include('/home/e-vans/projects/Sign up/Login/Includes/header.php');
  include('/home/e-vans/projects/Sign up/Login/Includes/navbar.php');
@@ -8,6 +9,14 @@ $page_title="Registration page";
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5">
+                <div class="alert">
+                    <?php
+                    if(isset($_SESSION['status'])){
+                        echo "<h4>".$_SESSION['status']."</h4>";
+                        unset($_SESSION['status']);
+                    }
+                    ?>
+                </div>
                 <div class="card shadow">
                     <div class="card-header">
                         <h5>Registration form</h5>
@@ -30,10 +39,10 @@ $page_title="Registration page";
                                 <label for="">Password</label>
                                 <input type="text" name="password" class="from-control">
                             </div>
-                            <div class="form-group mb-3  d-flex flex-column">
+                            <!-- <div class="form-group mb-3  d-flex flex-column">
                                 <label for="">Confirm Password</label>
                                 <input type="text" name="confirm-password" class="from-control">
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <button type="Submit" class="btn btn-primary" name="register-btn">
                                     Register

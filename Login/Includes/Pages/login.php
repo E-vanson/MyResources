@@ -8,6 +8,16 @@ $page_title="Registration page";
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5">
+                <?php
+                if(isset($_SESSION['status'])){
+                    ?>
+                    <div class="alert alert-success">
+                        <h5><?= $_SESSION['status']; ?></h5>
+                    </div>
+                    <?php
+                        unset($_SESSION['status']);
+                }
+                ?>
                 <div class="card shadow">
                     <div class="card-header">
                         <h5>Login form</h5>

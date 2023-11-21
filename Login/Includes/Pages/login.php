@@ -1,6 +1,16 @@
 <?php
 $page_title="Registration page";
-//session_start();
+session_start();
+
+if(isset($_SESSION['authenticated']) ){
+    $_SESSION['status'] = "You are already logged in :)";
+    header("Location: dashboard.php");
+    exit(0);
+}
+else{
+
+}
+
  include('header.php');
  include('navbar.php');
  //include('verify-email.php');
@@ -11,7 +21,7 @@ $page_title="Registration page";
         <div class="row justify-content-center">
             <div class="col-md-5">
                 <?php
-                session_start();
+            
                 if(isset($_SESSION['status'])){
                     ?>
                     <div class="alert alert-success">
@@ -26,7 +36,7 @@ $page_title="Registration page";
                         <h5>Login form</h5>
                     </div>
                     <div class="card-body">
-                        <form action="">
+                        <form action="logincode.php" method="POST">
                             <div class="form-group mb-3 d-flex flex-column">
                                 <label for="">Email</label>
                                 <input type="text" name="email" class="from-control">

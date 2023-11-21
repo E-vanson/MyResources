@@ -13,15 +13,23 @@
         <li class="nav-item">
           <a class="nav-link active"  href="index.php">Home</a>
         </li>
+        <?php if(!isset($_SESSION['authenticated'])) : ?>
         <li class="nav-item">
           <a class="nav-link" href="register.php">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="login.php">Login</a>
         </li>
+        <?php endif?>
         <li class="nav-item">
           <a class="nav-link" href="dashboard.php">Dashboard</a>
         </li>
+
+        <?php if(isset($_SESSION['authenticated'])) : ?>
+        <li class="nav-item">
+          <a class="nav-link" href="logout.php">Logout</a>
+        </li>
+        <?php endif?>
       </ul>
     </div>
   </div>

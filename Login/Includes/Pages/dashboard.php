@@ -8,8 +8,8 @@
 <body>
 <?php
 $page_title="Dashboard page";
- include('Login/Includes/Pages/header.php');
- include('Login/Includes/Pages/navbar.php');
+ include('header.php');
+ include('navbar.php');
 
  ?>
 
@@ -19,7 +19,7 @@ $page_title="Dashboard page";
         <div class="row">
             <div class="col-md-12 ">
                 <div class="card">
-                    <div class="card-header text-center bg-black">
+                    <div class="card-header text-center bg-sky">
                         <h3>User Dashboard</h3>
                     </div>
                     <div class="card-body text-center">
@@ -35,6 +35,6 @@ $page_title="Dashboard page";
 
 
 
-<?php include('Login/Includes/Pages/footer.php');?> 
+<?php include('footer.php');?> 
 </body>
 </html>

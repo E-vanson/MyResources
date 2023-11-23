@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+         
+         
+.login--btn {
+    background-image: linear-gradient(to right, #47A3FF 0%, #3a7bd5  51%, #00d2ff  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+  }
+
+.login--btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 5px #eee; 
+}
+ 

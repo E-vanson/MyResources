@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-include('dbcon.php');
+include('/home/e-vans/projects/Sign up/Login/Includes/Db/dbcon.php');
 session_start();
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -15,7 +15,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+require '/home/e-vans/projects/Sign up/Login/Includes/vendor/autoload.php';
 
 //install and set up php mailer: composer require phpmailer/phpmailer
 function sendEmail_verification($name, $email, $verify_token){
@@ -69,8 +69,8 @@ if(isset($_POST['register-btn'])){
     //generate random values
     $verify_token = md5(rand());
 
-    // sendEmail_verification("$name", "$email", "$verify_token");
-    // echo "Sent or not?";
+    sendEmail_verification("$name", "$email", "$verify_token");
+   //  echo "Sent or not?";
 
     //email exists or not
     $check_email_query = "SELECT email FROM UserLoginInfo WHERE email='$email' LIMIT 1";

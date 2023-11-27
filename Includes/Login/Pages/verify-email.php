@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('/home/e-vans/projects/Sign up/Login/Includes/Db/dbcon.php');
+include('/home/e-vans/projects/Sign up/Includes/Login/Db/dbcon.php');
 
 if(isset($_GET['token'])){
     $token = $_GET['token'];

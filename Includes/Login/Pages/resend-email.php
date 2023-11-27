@@ -8,14 +8,14 @@
 <body>
     <?php
     session_start();
-    include('/home/e-vans/projects/Sign up/Login/Includes/Db/dbcon.php');
+    include('/home/e-vans/projects/Sign up/Includes/Login/Db/dbcon.php');
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 
     //Load Composer's autoloader
-require '/home/e-vans/projects/Sign up/Login/Includes/vendor/autoload.php';
+require '/home/e-vans/projects/Sign up/Includes/vendor/autoload.php';
 
 
     function resend_email_verification($name, $email, $verify_token){

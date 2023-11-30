@@ -1112,6 +1112,10 @@ video {
   box-shadow: 0 0 5px #eee;
 }
 
+.visibility-line-1, .visibility-line-2{
+  transform: rotate(-30deg);
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1157,4 +1161,3 @@ video {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-

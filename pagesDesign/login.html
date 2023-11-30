@@ -26,10 +26,10 @@
         <section class="w-1/2 h-full flex flex-col items-center justify-evenly">
             
             <!-- Google sign-in -->
-             <div class="w-full h-1/5 flex flex-col items-center justify-evenly">
+             <div class="google-btn w-full h-1/5 flex flex-col items-center justify-evenly">
                 <div class="flex items-center justify-evenly w-2/3 h-1/2 border-2 rounded-md
                  hover:border-[#47A3FF] bg-[#e6ebfc] hover:cursor-pointer">
-                    <a href="" class="w-[30px] h-[30px]">
+                    <a href="#" id="google-signin" class="w-[30px] h-[30px]">
                         <img src="..\pagesDesign\images\google.png" class="h-full w-full" alt="">
                     </a>
                     <p>
@@ -50,12 +50,17 @@
             </div>
 
              <!-- input division --> 
-             <div class="w-full h-3/5 flex flex-col justify-evenly items-center">
-                <input type="text" placeholder="Email Address" class="w-2/3 h-[15%] border-2 rounded-md border-[#47A3FF] pl-2">
-                <input type="text" placeholder="Password" class="w-2/3 h-[15%] border-2 rounded-md border-[#47A3FF] pl-2">
-                <button class="w-1/2 h-[10%] border-2 rounded-lg hover:border-[#47A3FF] bg-[#e6ebfc]">
-                    log in
+             <div class="relative w-full h-3/5 flex flex-col justify-evenly items-center">
+                <input type="text" placeholder="Email Address" class="w-2/3 h-[15%] border-2 rounded-md border-[#47A3FF] px-2">
+                <input type="password" placeholder="Password" class="user-password w-2/3 h-[15%] border-2 rounded-md border-[#47A3FF] pl-2 pr-20">
+                <button id="login-btn" class="w-1/2 h-[10%] border-2 rounded-lg hover:border-[#47A3FF] bg-[#e6ebfc]">
+                    <a href="landing.html" id="login-link">log in</a>
                 </button>
+                <!-- visibility eye -->
+                <div id="see-btn" class="absolute right-[20%] bottom-[42%] flex items-center justify-center h-[40px] w-[40px] hover:cursor-pointer opacity-80">
+                    <img src="./images/eye.svg" alt="">
+                    <hr class="visibility-line visible fixed z-10 w-10 h-[3px] bg-[black]">
+                </div>
              </div>
 
              <!-- create account -->
@@ -72,6 +77,7 @@
         </section>
     </div>
 
+    <script src="login.js"></script>
 
 </body>
 </html>

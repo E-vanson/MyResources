@@ -23,3 +23,7 @@
 .visibility-line-1, .visibility-line-2{
   transform: rotate(-30deg);
 }
+
+.visibility-line{
+  transform: rotate(-30deg);
+}

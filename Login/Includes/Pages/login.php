@@ -51,6 +51,10 @@ else{
                                 </button>
                             </div>
                         </form>
+                        <hr>
+                        <h5>Did not recieve verification email??
+                                <a href="resend-email-verification.php">Resend</a>
+                        </h5>
 
                     </div>
                 </div>

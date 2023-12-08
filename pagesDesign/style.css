@@ -19,4 +19,11 @@
   text-decoration: none;
   box-shadow: 0 0 5px #eee; 
 }
- 
+
+.visibility-line-1, .visibility-line-2{
+  transform: rotate(-30deg);
+}
+
+.visibility-line{
+  transform: rotate(-30deg);
+}

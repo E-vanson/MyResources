@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-include('/home/e-vans/projects/Sign up/Login/Includes/Db/dbcon.php');
+include('/home/e-vans/projects/Sign up/Includes/Login/Db/dbcon.php');
 session_start();
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -15,7 +15,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require '/home/e-vans/projects/Sign up/Login/Includes/vendor/autoload.php';
+require '/home/e-vans/projects/Sign up/Includes/vendor/autoload.php';
 
 //install and set up php mailer: composer require phpmailer/phpmailer
 function sendEmail_verification($name, $email, $verify_token){

@@ -5,5 +5,7 @@ unset($_SESSION['auth_user']);
 
 $_SESSION['status'] = "You have logged out successfully";
 header("Location: login.php");
+$main=0;
+
 
 ?>

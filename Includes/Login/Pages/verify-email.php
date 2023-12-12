@@ -4,7 +4,7 @@ include('/home/e-vans/projects/Sign up/Includes/Login/Db/dbcon.php');
 
 if(isset($_GET['token'])){
     $token = $_GET['token'];
-    $verify_query ="SELECT verify_token,verify_status FROM UserLoginInfo WHERE verify_token='$token' LIMIT 1";
+    $verify_query ="SELECT verify_token,verify_status FROM UserInfo WHERE verify_token='$token' LIMIT 1";
     $verify_query_run = mysqli_query($con, $verify_query);
 
     //check if record exists
@@ -14,7 +14,7 @@ if(isset($_GET['token'])){
         //check if token is verified
         if($row['verify_status'] == '0'){
             $clicked_token = $row['verify_token'];
-            $update_query = "UPDATE UserLoginInfo SET verify_status='1' WHERE verify_token='$clicked_token' LIMIT 1";
+            $update_query = "UPDATE UserInfo SET verify_status='1' WHERE verify_token='$clicked_token' LIMIT 1";
             $update_query_run = mysqli_query($con, $update_query);
 
             if($update_query_run){

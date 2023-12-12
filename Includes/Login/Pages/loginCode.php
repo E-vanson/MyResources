@@ -20,7 +20,7 @@
             $password = mysqli_real_escape_string($con, $_POST['password']);
 
             //check if email and password are in db
-            $login_query = "SELECT * FROM UserLoginInfo WHERE email = '$email' AND password = '$password' LIMIT 1";
+            $login_query = "SELECT * FROM UserInfo WHERE email = '$email' AND password = '$password' LIMIT 1";
             $login_query_run = mysqli_query($con, $login_query);
 
             //check if any email exists

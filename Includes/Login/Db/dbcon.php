@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-$con = mysqli_connect("localhost:3307","root","","UserLogin");
+$con = mysqli_connect("localhost:3306","root","","UserLogin");
 if(mysqli_connect_errno()){
     echo "Couldn't connect....error" . mysqli_connect_errno();
 }

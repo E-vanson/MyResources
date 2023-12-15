@@ -8,8 +8,6 @@
 <body>
     <?php
     session_start();
-    include('navbar.php');
-    include("header.php");
     ?>
     <div class="py-5">
         <div class="container">
@@ -50,9 +48,7 @@
         </div>
     </div>
 
-    <?php
-    include("footer.php");
-    ?>
+    
     
 </body>
 </html>

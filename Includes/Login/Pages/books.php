@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/pagesDesign/css/main.css">
     <title>Books Resources</title>
 </head>
+<?php include('/home/e-vans/projects/Sign up/Includes/controllers/books_details.php')?>
+<?php
+$con = mysqli_connect("localhost:3306", "root", "", "UserLogin");
+
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
 <body class="w-screen h-screen overflow-x-hidden">
     <!-- Header -->
     <header class=" w-full h-[10%]">
         <div class="flex container mx-auto bg-[#c4d8ff] h-full items-center justify-evenly">
 
             <!-- logo -->
-            <img src="images\logo.svg" class="h-4/5" alt="">
+            <img src="/pagesDesign/images\logo.svg" class="h-4/5" alt="">
 
             <!-- menu buttons -->
             <div class="flex w-2/3 h-1/2 items-center justify-evenly bg-[white] rounded-[10px]">
@@ -52,10 +60,23 @@
                 </h2>
             </div>
             <div class="h-3/4 grid grid-cols-5 gap-10">
+            <!-- <?php //foreach ($files as $file): ?> -->
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
                     <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="/Includes/Login/Pages/uploadfile.php">Title</a>
+                    <!-- <a href="Includes/controllers/engUpload.php?file_id=<?php;?>">Title</a> -->
+                         <a href="/Includes/uploads/index.php">title</a> 
+                        <!-- <a href="view.php?file_id=<?php ;?>" target='_blank'>View PDF</a>  -->
+                        <!-- <a href="books_details.php?file_id=<?php //echo $file['id']; ?>">
+                    <?php echo $file['name']; ?>
+                     </a> -->
+                    </h4>
+                </div>
+                <!-- <?php //endforeach; ?> -->
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="b">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
@@ -76,12 +97,8 @@
                         <a href="">Title</a>
                     </h4>
                 </div>
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
-                    </h4>
-                </div>
+               
+                <!-- <?php //endforeach; ?>  -->
             </div>
         </div>
     </section>
@@ -225,22 +242,22 @@
             <!-- social links -->
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\facebook.svg" class="facebook--icon h-[40px] w-[40px]" alt="">
+                    <img src="/pagesDesign/images/facebook.svg" class="facebook--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">Facebook</small>
                 </div></a>
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\twitter.svg" class="twitter--icon h-[40px] w-[40px]" alt="">
+                    <img src="/pagesDesign/images/twitter.svg" class="twitter--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">Twitter</small>
                 </div></a>
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\instagram.svg" class="instagram--icon h-[40px] w-[40px]" alt="">
+                    <img src="/pagesDesign/images/instagram.svg" class="instagram--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">Instagram</small>
                 </div></a>
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\linkedin.svg" class="linkedin--icon h-[40px] w-[40px]" alt="">
+                    <img src="/pagesDesign/images/linkedin.svg" class="linkedin--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">LinkedIn</small>
                 </div></a>
         </div>

@@ -19,7 +19,7 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/projectLibrary/pagesDesign/css/main.css">
+    <link rel="stylesheet" href="/pagesDesign/css/main.css">
     <title>Log In</title>
 </head>
 <body class="w-screen h-screen flex items-center justify-center">
@@ -47,7 +47,7 @@ else{
                 </p>
             </div>
             <div class="w-full h-5/6">
-                <img src="/projectLibrary/pagesDesign/images/login.jpg" class="w-full h-full rounded-bl-lg"  alt="">
+                <img src="/pagesDesign/images/login.jpg" class="w-full h-full rounded-bl-lg"  alt="">
             </div>
         </section>
 
@@ -59,7 +59,7 @@ else{
                 <div class="flex items-center justify-evenly w-2/3 h-1/2 border-2 rounded-md
                  hover:border-[#47A3FF] bg-[#e6ebfc] hover:cursor-pointer">
                     <a href="#" id="google-signin" class="w-[30px] h-[30px]">
-                        <img src="/projectLibrary/pagesDesign/images/google.png" class="h-full w-full" alt="">
+                        <img src="/pagesDesign/images/google.png" class="h-full w-full" alt="">
                     </a>
                     <p>
                         Sign in with Google
@@ -88,7 +88,7 @@ else{
                 </button>
                 <!-- visibility eye -->
                 <div id="see-btn" class="absolute right-[20%] bottom-[42%] flex items-center justify-center h-[40px] w-[40px] hover:cursor-pointer opacity-80">
-                    <img src="/projectLibrary/pagesDesign/images/eye.svg" alt="">
+                    <img src="/pagesDesign/images/eye.svg" alt="">
                     <hr class="visibility-line visible fixed z-10 w-10 h-[3px] bg-[black]">
                 </div>
             </form>
@@ -113,7 +113,7 @@ else{
         </section>
     </div>
 
-    <script src="/projectLibrary/pagesDesign/login.js"></script>
+    <script src="/pagesDesign/login.js"></script>
 
 </body>
 </html>

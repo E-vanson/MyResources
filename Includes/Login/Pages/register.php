@@ -9,7 +9,7 @@ $page_title="Registration page";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/projectLibrary/pagesDesign/css/main.css">
+    <link rel="stylesheet" href="/pagesDesign/css/main.css">
     <title>Sign In</title>
 </head>
 <body class="flex w-screen h-screen items-center justify-center">
@@ -73,7 +73,7 @@ $page_title="Registration page";
                     <input type="password" class="user-password-1 w-4/5 h-8 focus:outline-none pt-3" name="password">
                     <!-- visibility eye -->
                     <div id="see-btn-1" class="flex items-center justify-center relative h-[40px] w-[40px] hover:cursor-pointer opacity-80">
-                        <img src="/projectLibrary/pagesDesign/images/eye.svg" alt="">
+                        <img src="/pagesDesign/images/eye.svg" alt="">
                         <hr class="visibility-line-1 visible fixed z-10 w-10 h-[3px] bg-[black]">
                     </div>
                 </div>
@@ -88,7 +88,7 @@ $page_title="Registration page";
                     <input type="password" class="user-password-2 w-4/5 h-8 focus:outline-none pt-3" name="confirmPassword">
                     <!-- visibility eye -->
                     <div id="see-btn-2" class="flex items-center justify-center relative h-[40px] w-[40px] hover:cursor-pointer opacity-80">
-                        <img src="/projectLibrary/pagesDesign/images/eye.svg" alt="">
+                        <img src="/pagesDesign/images/eye.svg" alt="">
                         <hr class="visibility-line-2 visible fixed z-10 w-10 h-[3px] bg-[black]">
                     </div>
                 </div>
@@ -102,7 +102,7 @@ $page_title="Registration page";
             </form>
     </div>
 
-    <script src="/projectLibrary/pagesDesign/signin.js"></script>
+    <script src="/pagesDesign/signin.js"></script>
  
 </body>
 </html>

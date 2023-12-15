@@ -4,7 +4,7 @@ include('filelogic.php');
 include('view.php');
 ?>
 <html lang="en">
-<head>s
+<head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@ include('view.php');
         <thead>
             <th>Id</th>
             <th>File Name</th>
-            <th>Size in Mb</th>
+            <th>Size</th>
             <th>Downloads</th>
             <th colspan="2">Actions</th>
         </thead>
@@ -35,7 +35,7 @@ include('view.php');
             <tr>
                 <td><?php echo $file['id'];?></td>
                 <td><?php echo $file['name'];?></td>
-                <td><?php echo $file['size'] / 1000 . "KB";?></td>
+                <td><?php echo $file['size'] / 1000 . " KB";?></td>
                 <td><?php echo $file['downloads'];?></td>
                 <td><a href="index.php?file_id=<?php echo $file['id'];?>">Download</a></td>
                 <!-- <td><a href="download.php?file_id=<?php ?>">Download</a></td>-->

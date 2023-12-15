@@ -6,27 +6,19 @@
     <link rel="stylesheet" href="/pagesDesign/css/main.css">
     <title>Books Resources</title>
 </head>
-<?php include('/home/e-vans/projects/Sign up/Includes/controllers/books_details.php')?>
-<?php
-$con = mysqli_connect("localhost:3306", "root", "", "UserLogin");
-
-if (!$con) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-?>
 <body class="w-screen h-screen overflow-x-hidden">
     <!-- Header -->
     <header class=" w-full h-[10%]">
         <div class="flex container mx-auto bg-[#c4d8ff] h-full items-center justify-evenly">
 
             <!-- logo -->
-            <img src="/pagesDesign/images\logo.svg" class="h-4/5" alt="">
+            <img src="images\logo.svg" class="h-4/5" alt="">
 
             <!-- menu buttons -->
-            <div class="flex w-2/3 h-1/2 items-center justify-evenly bg-[white] rounded-[10px]">
+            <div class="home--btn flex w-2/3 h-1/2 items-center justify-evenly bg-[white] rounded-[10px]">
                 <button class="bg-[#47A3FF] w-[15%] h-4/5 rounded-[10px] pb-1 text-[white] font-semibold
                 hover:opacity-80">
-                    <a href="landing.html">Home</a>
+                    <a href="landing.html" class="home--link">Home</a>
                 </button>
                 <button class="bg-[#47A3FF] w-[15%] h-4/5 rounded-[10px] pb-1 text-[white] font-semibold
                 hover:opacity-80">
@@ -60,45 +52,36 @@ if (!$con) {
                 </h2>
             </div>
             <div class="h-3/4 grid grid-cols-5 gap-10">
-            <!-- <?php //foreach ($files as $file): ?> -->
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/engineering.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                    <!-- <a href="Includes/controllers/engUpload.php?file_id=<?php;?>">Title</a> -->
-                         <a href="/Includes/uploads/index.php">title</a> 
-                        <!-- <a href="view.php?file_id=<?php ;?>" target='_blank'>View PDF</a>  -->
-                        <!-- <a href="books_details.php?file_id=<?php //echo $file['id']; ?>">
-                    <?php echo $file['name']; ?>
-                     </a> -->
-                    </h4>
-                </div>
-                <!-- <?php //endforeach; ?> -->
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="b">Title</a>
+                        <a href="/Includes/uploads/index.php">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/engineering.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
+                        <a href="/Includes/uploads/index.php">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/engineering.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
+                        <a href="/Includes/Login/Pages/uploadfile.php">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/engineering.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
+                        <a href="/Includes/uploads/index.php">Title</a>
                     </h4>
                 </div>
-               
-                <!-- <?php //endforeach; ?>  -->
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="../pagesDesign/images/engineering.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="/Includes/uploads/index.php">Title</a>
+                    </h4>
+                </div>
             </div>
         </div>
     </section>
@@ -114,31 +97,31 @@ if (!$con) {
             </div>
             <div class="h-3/4 grid grid-cols-5 gap-10">
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/medicine.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="medicineBook.html">Title</a>
+                    </h4>
+                </div>
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="../pagesDesign/images/medicine.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="medicineBook.html">Title</a>
+                    </h4>
+                </div>
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="../pagesDesign/images/medicine.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/medicine.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
-                    </h4>
-                </div>
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
-                    </h4>
-                </div>
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/medicine.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
@@ -158,31 +141,31 @@ if (!$con) {
             </div>
             <div class="h-3/4 grid grid-cols-5 gap-10">
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/education.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="educationBook.html">Title</a>
+                    </h4>
+                </div>
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="../pagesDesign/images/education.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="educationBook.html">Title</a>
+                    </h4>
+                </div>
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="../pagesDesign/images/education.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/education.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
-                    </h4>
-                </div>
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
-                    </h4>
-                </div>
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="../pagesDesign/images/education.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
@@ -202,31 +185,31 @@ if (!$con) {
             </div>
             <div class="h-3/4 grid grid-cols-5 gap-10">
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="pagesDesign/images/agriculture.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="agricultureBook.html">Title</a>
+                    </h4>
+                </div>
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="pagesDesign/images/agriculture.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
+                        <a href="agricultureBook.html">Title</a>
+                    </h4>
+                </div>
+                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
+                    <img src="pagesDesign/images/agriculture.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="pagesDesign/images/agriculture.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
                 </div>
                 <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
-                    </h4>
-                </div>
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
-                    <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
-                        <a href="">Title</a>
-                    </h4>
-                </div>
-                <div class="w-[250px] h-full flex flex-col items-center bg-[#fefef9] rounded-md shadow-md">
-                    <img src="" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
+                    <img src="pagesDesign/images/agriculture.jpg" class="h-3/4 w-full mb-1 rounded-t-md" alt="">
                     <h4 class="text-sm font-semibold hover:underline hover:opacity-70">
                         <a href="">Title</a>
                     </h4>
@@ -263,6 +246,6 @@ if (!$con) {
         </div>
     </footer>
 
-
+    <script src="books.js"></script>
 </body>
 </html>

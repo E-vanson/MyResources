@@ -4,63 +4,12 @@ $page_title="Registration page";
  
  ?>
 
-<!-- <div class="py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="alert">
-                    <?php
-                    // if(isset($_SESSION['status'])){
-                    //     echo "<h4>".$_SESSION['status']."</h4>";
-                    //     unset($_SESSION['status']);
-                    // }
-                    ?>
-                </div>
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h5>Registration form</h5>
-                    </div>
-                    <div class="card-body">
-                        <form action="registerCode.php" method="post">
-                            <div class="form-group mb-3 d-flex flex-column">
-                                <label for="">Name</label>
-                                <input type="text" name="name" class="from-control">
-                            </div>
-                            <div class="form-group mb-3  d-flex flex-column">
-                                <label for="">Phone Number</label>
-                                <input type="text" name="number" class="from-control">
-                            </div>
-                            <div class="form-group mb-3  d-flex flex-column">
-                                <label for="">Email</label>
-                                <input type="text" name="email" class="from-control">
-                            </div>
-                            <div class="form-group mb-3  d-flex flex-column">
-                                <label for="">Password</label>
-                                <input type="text" name="password" class="from-control">
-                            </div>
-                             <div class="form-group mb-3  d-flex flex-column">
-                                <label for="">Confirm Password</label>
-                                <input type="text" name="confirm-password" class="from-control">
-                            </div> -->
-                            <!-- <div class="form-group">
-                                <button type="Submit" class="btn btn-primary" name="register-btn">
-                                    Register
-                                </button>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pagesDesign/css/main.css">
+    <link rel="stylesheet" href="/projectLibrary/pagesDesign/css/main.css">
     <title>Sign In</title>
 </head>
 <body class="flex w-screen h-screen items-center justify-center">
@@ -71,16 +20,15 @@ $page_title="Registration page";
         </p>
 
         <!-- details input section -->
-        <section class="flex flex-col items-center justify-evenly w-full h-4/5">
-        <div class="alert">
-                    <?php
-                    if(isset($_SESSION['status'])){
-                        echo "<h4>".$_SESSION['status']."</h4>";
-                        unset($_SESSION['status']);
-                    }
-                    ?>
-                </div>
-            <form action="registerCode.php" method="post">
+        <form action="registerCode.php" method="post" class="flex flex-col items-center justify-evenly w-full h-4/5">
+            <div class="alert">
+                <?php
+                if(isset($_SESSION['status'])){
+                    echo "<h4>".$_SESSION['status']."</h4>";
+                    unset($_SESSION['status']);
+                }
+                ?>
+            </div>
             <div class="w-[90%] h-1/6">
                 <p class="mt-5 text-xl">
                     <span class="text-[red]">*</span>
@@ -125,7 +73,7 @@ $page_title="Registration page";
                     <input type="password" class="user-password-1 w-4/5 h-8 focus:outline-none pt-3" name="password">
                     <!-- visibility eye -->
                     <div id="see-btn-1" class="flex items-center justify-center relative h-[40px] w-[40px] hover:cursor-pointer opacity-80">
-                        <img src="/pagesDesign/images/eye.svg" alt="">
+                        <img src="/projectLibrary/pagesDesign/images/eye.svg" alt="">
                         <hr class="visibility-line-1 visible fixed z-10 w-10 h-[3px] bg-[black]">
                     </div>
                 </div>
@@ -140,7 +88,7 @@ $page_title="Registration page";
                     <input type="password" class="user-password-2 w-4/5 h-8 focus:outline-none pt-3" name="confirmPassword">
                     <!-- visibility eye -->
                     <div id="see-btn-2" class="flex items-center justify-center relative h-[40px] w-[40px] hover:cursor-pointer opacity-80">
-                        <img src="/pagesDesign/images/eye.svg" alt="">
+                        <img src="/projectLibrary/pagesDesign/images/eye.svg" alt="">
                         <hr class="visibility-line-2 visible fixed z-10 w-10 h-[3px] bg-[black]">
                     </div>
                 </div>
@@ -151,11 +99,10 @@ $page_title="Registration page";
                 <!-- <a href="./login.html" id="signin-link">Sign In</a> -->
                 Sign in
             </button>
-         </form>
-        </section>
+            </form>
     </div>
 
-    <script src="/pagesDesign/signin.js"></script>
+    <script src="/projectLibrary/pagesDesign/signin.js"></script>
  
 </body>
 </html>

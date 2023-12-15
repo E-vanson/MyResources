@@ -1,48 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-</head>
-<body>
-<?php
-$page_title="Home page";
-//  include('header.php');
-//  include('navbar.php');
- 
-
- ?>
-
-
-<div class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h4>
-                    Login and Verification
-                </h4>
-                <h5>
-                    For Project X
-                </h5>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<?php include('footer.php');?> 
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="/projectLibrary/pagesDesign/css/main.css">
     <title>Landing Page</title>
 </head>
 <body class="overflow-x-hidden w-screen h-screen">
@@ -51,7 +12,7 @@ $page_title="Home page";
         <div class="flex container mx-auto bg-[#c4d8ff] h-full items-center justify-evenly">
 
             <!-- logo -->
-            <img src="images\logo.svg" class="h-4/5" alt="">
+            <img src="\projectLibrary\pagesDesign\images\logo.svg" class="h-4/5" alt="">
 
             <!-- menu buttons -->
             <div class="flex w-2/3 h-1/2 items-center justify-evenly bg-[white] rounded-[10px]">
@@ -76,7 +37,13 @@ $page_title="Home page";
             <!-- logIn button -->
             <button class="bg-[#847AF5] pb-1 w-[150px] h-1/3 rounded-[10px] hover:opacity-80 hover:text-[white]
             login--btn">
-                <a href="#">Log In / sign In</a>
+                <a href="#">Log In</a>
+            </button>
+
+            <!-- SignIn button -->
+            <button class="bg-[#847AF5] pb-1 w-[150px] h-1/3 rounded-[10px] hover:opacity-80 hover:text-[white]
+            login--btn">
+                <a href="#">sign In</a>
             </button>
         </div>
     </header>
@@ -86,7 +53,7 @@ $page_title="Home page";
         <div class="container mx-auto h-full relative flex justify-center bg-[#F1F8FF]">
             <!-- left image -->
             <div class="left--img w-1/4 h-2/5 absolute top-12 left-8 rotate-[-10deg]">
-                <img src="images\library2.jpg" class="w-full h-full rounded-lg" alt="">
+                <img src="\projectLibrary\pagesDesign\images\library2.jpg" class="w-full h-full rounded-lg" alt="">
             </div>
             <!-- left content -->
             <div class="left--content w-1/4 h-1/4 absolute bottom-20 left-20 rotate-[5deg]">
@@ -108,7 +75,7 @@ $page_title="Home page";
             
             <!-- right image -->
             <div class="left--img w-1/4 h-2/5 absolute top-12 right-8 rotate-[10deg]">
-                <img src="images\library3.jpg" class="w-full h-full rounded-lg" alt="">
+                <img src="\projectLibrary\pagesDesign\images\library3.jpg" class="w-full h-full rounded-lg" alt="">
             </div>
             <!-- right content -->
             <div class="left--content w-1/4 h-1/4 absolute bottom-20 right-20 rotate-[-5deg]">
@@ -122,7 +89,7 @@ $page_title="Home page";
 
             <!-- bottom image -->
             <div class="left--img w-1/4 h-1/2 absolute bottom-[10%]">
-                <img src="images\shelves.jpg" class="w-full h-full rounded-lg" alt="">
+                <img src="\projectLibrary\pagesDesign\images\shelves.jpg" class="w-full h-full rounded-lg" alt="">
             </div>
         </div>
     </section>
@@ -136,7 +103,7 @@ $page_title="Home page";
             <div class="flex items-center w-full h-4/5">
                 <div class="flex justify-evenly w-full h-4/5">
                     <div class="flex flex-col items-center w-1/5 bg-[#F1F8FF] shadow-md">
-                        <img src="images\library1.jpg" class="w-full h-1/2 rounded-t-lg" alt="">
+                        <img src="\projectLibrary\pagesDesign\images\library1.jpg" class="w-full h-1/2 rounded-t-lg" alt="">
                         <div class="flex flex-col items-center justify-around w-full h-1/3 my-[8%]">
                             <p class="text-sm font-semibold underline">
                             Books
@@ -149,7 +116,7 @@ $page_title="Home page";
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-1/5 bg-[#F1F8FF] shadow-md">
-                        <img src="images\pdf.jpg" class="w-full h-1/2 rounded-t-lg" alt="">
+                        <img src="\projectLibrary\pagesDesign\images\pdf.jpg" class="w-full h-1/2 rounded-t-lg" alt="">
                         <div class="flex flex-col items-center justify-around w-full h-1/3 my-[8%]">
                             <p class="text-sm font-semibold underline">
                             PDF's
@@ -162,7 +129,7 @@ $page_title="Home page";
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-1/5 bg-[#F1F8FF] shadow-md">
-                        <img src="images\articles.jpg" class="w-full h-1/2 rounded-t-lg" alt="">
+                        <img src="\projectLibrary\pagesDesign\images\articles.jpg" class="w-full h-1/2 rounded-t-lg" alt="">
                         <div class="flex flex-col items-center justify-around w-full h-1/3 my-[8%]">
                             <p class="text-sm font-semibold underline">
                             Articles
@@ -175,7 +142,7 @@ $page_title="Home page";
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-1/5 bg-[#F1F8FF] shadow-md">
-                        <img src="images\links.jpg" class="w-full h-1/2 rounded-t-md" alt="">
+                        <img src="\projectLibrary\pagesDesign\images\links.jpg" class="w-full h-1/2 rounded-t-md" alt="">
                         <div class="flex flex-col items-center justify-around w-full h-1/3 my-[8%]">
                             <p class="text-sm font-semibold underline">
                             Links
@@ -199,22 +166,22 @@ $page_title="Home page";
             <!-- social links -->
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\facebook.svg" class="facebook--icon h-[40px] w-[40px]" alt="">
+                    <img src="\projectLibrary\pagesDesign\images\facebook.svg" class="facebook--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">Facebook</small>
                 </div></a>
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\twitter.svg" class="twitter--icon h-[40px] w-[40px]" alt="">
+                    <img src="\projectLibrary\pagesDesign\images\twitter.svg" class="twitter--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">Twitter</small>
                 </div></a>
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\instagram.svg" class="instagram--icon h-[40px] w-[40px]" alt="">
+                    <img src="\projectLibrary\pagesDesign\images\instagram.svg" class="instagram--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">Instagram</small>
                 </div></a>
             <a href="#">
                 <div class="w-[75px] h-[60px] flex flex-col items-center justify-between">
-                    <img src="images\linkedin.svg" class="linkedin--icon h-[40px] w-[40px]" alt="">
+                    <img src="\projectLibrary\pagesDesign\images\linkedin.svg" class="linkedin--icon h-[40px] w-[40px]" alt="">
                     <small class="text-[white] text-align text-xs">LinkedIn</small>
                 </div></a>
         </div>

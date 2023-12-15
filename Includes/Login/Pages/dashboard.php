@@ -20,11 +20,11 @@
         <div class="row">
             <div class="col-md-12 ">
             <?php
-            
+           // htmlspecialchars( $_SESSION['status'])
             // if(isset($_SESSION['status'])){
                 ?>
-            //     <div class="alert alert-success">
-            //         <h5><?= htmlspecialchars( $_SESSION['status']); ?></h5>
+                <div class="alert alert-success">
+            //         <h5></h5>
             //     </div>
             //     <?php
             //         unset($_SESSION['status']);
@@ -38,10 +38,8 @@
                     <h4> User Dashboard</h4>
                 <h5>Only used when user is logged in</h5>
                 <hr>
-                  <h5>Hello <?= $_SESSION['auth_user']['username']; ?></h5> -->
-                <!-- <h5>Your email is <?= $_SESSION['auth_user']['email']; ?></h5>
-                <h5>Phone number is: <?= $_SESSION['auth_user']['number']; ?></h5>
-                    </div> --> 
+                 $_SESSION['auth_user']['username'] $_SESSION['auth_user']['email'] $_SESSION['auth_user']['number'];
+                  <h5>Hello -->
                 <!-- </div>
                 
             </div>
@@ -175,7 +173,7 @@
                             <p class="text-sm w-4/5">
                                 If you love getting your knowledge from books inspired by profecient writers
                                 this section while suit you best. All books are available to you for free! 
-                                <span class="text-[#47A3FF] text-xs hover:underline"><a href="books.html">looking for me?</a></span>
+                                <span class="text-[#47A3FF] text-xs hover:underline"><a href="/Includes/Login/Pages/books.php">looking for me?</a></span>
                             </p>
                         </div>
                     </div>

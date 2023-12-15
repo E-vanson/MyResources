@@ -144,7 +144,7 @@ $page_title="Home page";
                             <p class="text-sm w-4/5">
                                 If you love getting your knowledge from books inspired by profecient writers
                                 this section while suit you best. All books are available to you for free! 
-                                <span class="text-[#47A3FF] text-xs hover:underline"><a href="books.html">looking for me?</a></span>
+                                <span class="text-[#47A3FF] text-xs hover:underline"><a href="Includes/Login/Pages/books.php">looking for me?</a></span>
                             </p>
                         </div>
                     </div>

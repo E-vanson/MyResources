@@ -69,7 +69,7 @@ require '/home/e-vans/projects/Sign up/Includes/vendor/autoload.php';
             //if input if filled
             $email = mysqli_real_escape_string($con, $_POST['email']);
 
-            $checkemail_query = "SELECT * FROM UserLoginInfo WHERE email ='$email' LIMIT 1";
+            $checkemail_query = "SELECT * FROM UserIn WHERE email ='$email' LIMIT 1";
             $checkemail_query_run = mysqli_query($con, $checkemail_query);
 
             //if any record is exists

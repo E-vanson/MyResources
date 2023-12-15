@@ -78,14 +78,14 @@ if(isset($_POST['register-btn'])){
    //  echo "Sent or not?";
 
     //email exists or not
-    $check_email_query = "SELECT email FROM UserInfo WHERE email='$email' LIMIT 1";
+    $check_email_query = "SELECT email FROM UserIn WHERE email='$email' LIMIT 1";
     $check_email_query_run = mysqli_query($con, $check_email_query);
 
     if(mysqli_num_rows($check_email_query_run) > 0){
         $_SESSION['status'] = "Email id already exists";
         header("Location: login.php");
     }else{
-        $query = "INSERT INTO UserInfo(fname,sname,email,password,verify_token) VALUES('$fname', '$sname','$email', '$password', '$verify_token')";
+        $query = "INSERT INTO UserIn(fname,sname,email,password,verify_token) VALUES('$fname', '$sname','$email', '$password', '$verify_token')";
         $query_run = mysqli_query($con, $query);
 
         if($query_run){
